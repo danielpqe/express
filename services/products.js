@@ -40,7 +40,6 @@ class ProductsService {
       this.collection,
       productId
     );
-
     return deletedProductId;
   }
 }

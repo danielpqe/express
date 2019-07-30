@@ -30,7 +30,6 @@ function productsApi(app) {
 
     try {
       const products = await productService.getProducts({ tags });
-
       res.status(200).json({
         data: products,
         message: "products listed"
@@ -96,7 +95,7 @@ function productsApi(app) {
       } catch (err) {
         next(err);
       }
-    }
+    } 
   );
 
   router.delete(
